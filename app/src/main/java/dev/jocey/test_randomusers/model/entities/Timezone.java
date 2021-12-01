@@ -2,7 +2,9 @@ package dev.jocey.test_randomusers.model.entities;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Timezone {
+import java.io.Serializable;
+
+public class Timezone implements Serializable {
 
     @SerializedName("offset")
     private String offset;

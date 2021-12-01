@@ -2,18 +2,20 @@ package dev.jocey.test_randomusers.model.entities;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Street {
+import java.io.Serializable;
+
+public class Street implements Serializable {
 
     @SerializedName("number")
-    private Integer number;
+    private String number;
     @SerializedName("name")
     private String name;
 
-    public Integer getNumber() {
+    public String getNumber() {
         return number;
     }
 
-    public void setNumber(Integer number) {
+    public void setNumber(String number) {
         this.number = number;
     }
 

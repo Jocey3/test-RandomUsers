@@ -1,8 +1,30 @@
 package dev.jocey.test_randomusers.model.entities;
 
+import android.os.Parcelable;
+
 import com.google.gson.annotations.SerializedName;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
+    @Override
+    public String toString() {
+        return "User{" +
+                "gender='" + gender + '\'' +
+                ", name=" + name +
+                ", location=" + location +
+                ", email='" + email + '\'' +
+                ", login=" + login +
+                ", dob=" + dob +
+                ", registered=" + registered +
+                ", phone='" + phone + '\'' +
+                ", cell='" + cell + '\'' +
+                ", id=" + id +
+                ", picture=" + picture +
+                ", nat='" + nat + '\'' +
+                '}';
+    }
+
     @SerializedName("gender")
     private String gender;
     @SerializedName("name")

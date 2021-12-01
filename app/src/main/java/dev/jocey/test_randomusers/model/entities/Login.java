@@ -3,7 +3,9 @@ package dev.jocey.test_randomusers.model.entities;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Login {
+import java.io.Serializable;
+
+public class Login implements Serializable {
     @SerializedName("uuid")
     private String uuid;
     @SerializedName("username")

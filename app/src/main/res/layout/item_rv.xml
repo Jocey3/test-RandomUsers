@@ -4,7 +4,7 @@
     android:id="@+id/card_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp"
+    android:layout_marginTop="10dp"
     app:cardBackgroundColor="@color/purple_200"
     app:cardCornerRadius="25dp">
 
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <com.meg7.widget.CircleImageView
+        <ImageView
             android:id="@+id/image_list"
             android:layout_width="65dp"
             android:layout_height="65dp"

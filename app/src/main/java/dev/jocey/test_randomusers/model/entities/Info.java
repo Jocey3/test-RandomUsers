@@ -2,29 +2,31 @@ package dev.jocey.test_randomusers.model.entities;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Info {
+import java.io.Serializable;
+
+public class Info implements Serializable {
     @SerializedName("page")
-    private Integer page;
+    private String page;
     @SerializedName("results")
-    private Integer results;
+    private String results;
     @SerializedName("seed")
     private String seed;
     @SerializedName("version")
-    private Double version;
+    private String version;
 
-    public Integer getPage() {
+    public String getPage() {
         return page;
     }
 
-    public void setPage(Integer page) {
+    public void setPage(String page) {
         this.page = page;
     }
 
-    public Integer getResults() {
+    public String getResults() {
         return results;
     }
 
-    public void setResults(Integer results) {
+    public void setResults(String results) {
         this.results = results;
     }
 
@@ -36,11 +38,11 @@ public class Info {
         this.seed = seed;
     }
 
-    public Double getVersion() {
+    public String getVersion() {
         return version;
     }
 
-    public void setVersion(Double version) {
+    public void setVersion(String version) {
         this.version = version;
     }
 }

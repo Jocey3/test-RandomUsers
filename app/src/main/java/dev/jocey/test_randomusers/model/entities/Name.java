@@ -2,7 +2,9 @@ package dev.jocey.test_randomusers.model.entities;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Name {
+import java.io.Serializable;
+
+public class Name implements Serializable {
 
     @SerializedName("title")
     private String title;

@@ -3,7 +3,9 @@ package dev.jocey.test_randomusers.model.entities;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Dob {
+import java.io.Serializable;
+
+public class Dob implements Serializable {
     @SerializedName("date")
     private String date;
     @SerializedName("age")

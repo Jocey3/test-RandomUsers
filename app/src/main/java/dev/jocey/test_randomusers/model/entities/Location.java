@@ -3,7 +3,9 @@ package dev.jocey.test_randomusers.model.entities;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Location {
+import java.io.Serializable;
+
+public class Location implements Serializable {
     @SerializedName("street")
     private Street street;
     @SerializedName("city")
@@ -13,7 +15,7 @@ public class Location {
     @SerializedName("country")
     private String country;
     @SerializedName("postcode")
-    private Integer postcode;
+    private String postcode;
     @SerializedName("coordinates")
     private Coordinates coordinates;
     @SerializedName("timezone")
@@ -51,11 +53,11 @@ public class Location {
         this.country = country;
     }
 
-    public Integer getPostcode() {
+    public String getPostcode() {
         return postcode;
     }
 
-    public void setPostcode(Integer postcode) {
+    public void setPostcode(String postcode) {
         this.postcode = postcode;
     }
 
